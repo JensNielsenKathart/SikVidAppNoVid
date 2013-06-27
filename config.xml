@@ -16,7 +16,7 @@ Jens Nielsen
 
 <content src="index.html" />
 
-    <access origin="http://www.sik.dk/Tjek-din-haandvaerker" />
+    <access origin=".*" browserOnly="true"/>
 
     <preference name="AllowInlineMediaPlayback" value="false" />
     <preference name="orientation" value="portrait" />
@@ -27,8 +27,8 @@ Jens Nielsen
     <icon src="img/icon/ios/icon-57-2x.png" gap:platform="ios" width="114" height="114" />
     <icon src="img/icon/ios/icon-72-2x.png" gap:platform="ios" width="144" height="144" />
 
-    <gap:splash src="img/screen/ios/screen-iphone-portrait.png"    gap:platform="ios"     width="320" height="480" />
-    <gap:splash src="img/screen/ios/screen-iphone-portrait-2x.png" gap:platform="ios"     width="640" height="960" />
-    <gap:splash src="img/screen/ios/screen-iphone-portrait-568h-2x.png" gap:platform="ios"     width="640" height="1136" />
+    <gap:splash src="img/screen/ios/screen-iphone-portrait.png" gap:platform="ios" width="320" height="480" />
+    <gap:splash src="img/screen/ios/screen-iphone-portrait-2x.png" gap:platform="ios" width="640" height="960" />
+    <gap:splash src="img/screen/ios/screen-iphone-portrait-568h-2x.png" gap:platform="ios" width="640" height="1136" />
 
 </widget>
