@@ -16,7 +16,7 @@ Jens Nielsen
 
 <content src="index.html" />
 
-    <access origin=".*" browserOnly="true"/>
+    <!--<access origin=".*" browserOnly="true"/>-->
 
     <preference name="AllowInlineMediaPlayback" value="false" />
     <preference name="orientation" value="portrait" />
