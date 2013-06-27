@@ -1,0 +1,756 @@
+@import url(../font/fonte.css);
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/** Basic **/
+/* line 17, ../../../../../../Applications/Scout.app/Contents/Resources/vendor/gems/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../Applications/Scout.app/Contents/Resources/vendor/gems/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../Applications/Scout.app/Contents/Resources/vendor/gems/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../Applications/Scout.app/Contents/Resources/vendor/gems/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../Applications/Scout.app/Contents/Resources/vendor/gems/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../Applications/Scout.app/Contents/Resources/vendor/gems/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../Applications/Scout.app/Contents/Resources/vendor/gems/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../Applications/Scout.app/Contents/Resources/vendor/gems/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../Applications/Scout.app/Contents/Resources/vendor/gems/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+/** Usefull **/
+/* line 22, ../sass/base.scss */
+.clearfix:before, .clearfix:after {
+  content: "";
+  display: table;
+}
+
+/* line 23, ../sass/base.scss */
+.clearfix:after {
+  clear: both;
+}
+
+/* line 24, ../sass/base.scss */
+.clearfix {
+  zoom: 1;
+}
+
+/** Functions **/
+/**basics**/
+/* line 36, ../sass/base.scss */
+h1, h2, h3 {
+  font-family: pt_sansbold;
+}
+
+/* line 40, ../sass/base.scss */
+.animateEaseInOut, nav, nav.active, nav section .infoBtnWrapper .btnInfo,
+nav section .infoBtnWrapper .btnNav,
+nav section .navBtnWrapper .btnInfo,
+nav section .navBtnWrapper .btnNav, nav section .infoBtnWrapper .btnInfo.active,
+nav section .infoBtnWrapper .btnNav.active,
+nav section .navBtnWrapper .btnInfo.active,
+nav section .navBtnWrapper .btnNav.active, nav section .infoBtnWrapper .btnInfo.active span,
+nav section .infoBtnWrapper .btnNav.active span,
+nav section .navBtnWrapper .btnInfo.active span,
+nav section .navBtnWrapper .btnNav.active span, nav section .infoBtnWrapper .btnInfo span,
+nav section .infoBtnWrapper .btnNav span,
+nav section .navBtnWrapper .btnInfo span,
+nav section .navBtnWrapper .btnNav span, nav section .navBtnWrapper, nav section .navBtnWrapper.active, #menu, #menu.active, #info, #info.active, .contentWrapper, .contentWrapper.active, .android nav section .infoBtnWrapper .btnInfo.active,
+.android nav section .infoBtnWrapper .btnNav.active,
+.android nav section .navBtnWrapper .btnInfo.active,
+.android nav section .navBtnWrapper .btnNav.active, .android nav section .infoBtnWrapper .btnInfo.active span,
+.android nav section .infoBtnWrapper .btnNav.active span,
+.android nav section .navBtnWrapper .btnInfo.active span,
+.android nav section .navBtnWrapper .btnNav.active span, .android nav section .navBtnWrapper.active {
+  -webkit-transition: all 300ms cubic-bezier(0.42, 0, 0.58, 1);
+  -moz-transition: all 300ms cubic-bezier(0.42, 0, 0.58, 1);
+  -ms-transition: all 300ms cubic-bezier(0.42, 0, 0.58, 1);
+  -o-transition: all 300ms cubic-bezier(0.42, 0, 0.58, 1);
+  transition: all 300ms cubic-bezier(0.42, 0, 0.58, 1);
+  -webkit-transition-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
+  -moz-transition-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
+  -ms-transition-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
+  -o-transition-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
+  transition-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
+}
+
+/* line 54, ../sass/base.scss */
+.gpu {
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+/* line 62, ../sass/base.scss */
+.iconSprite, section.items article .itemHeader h2, .android section.items article .itemHeader h2 {
+  background-image: url("../img/iconer.svg");
+  background-repeat: no-repeat;
+  background-position: 0px 0px;
+}
+
+/* line 70, ../sass/base.scss */
+.dim {
+  animation: move 1s;
+  -moz-animation: dim 1s;
+  -webkit-animation: dim 1s;
+}
+
+@-webkit-keyframes dim {
+  /* line 77, ../sass/base.scss */
+  0% {
+    opacity: 1;
+  }
+
+  /* line 80, ../sass/base.scss */
+  25% {
+    opacity: 0.5;
+  }
+
+  /* line 83, ../sass/base.scss */
+  50% {
+    opacity: 1;
+  }
+
+  /* line 86, ../sass/base.scss */
+  75% {
+    opacity: 0.5;
+  }
+
+  /* line 89, ../sass/base.scss */
+  100% {
+    opacity: 1;
+  }
+}
+
+/* line 11, ../sass/screen.scss */
+html {
+  height: 100%;
+}
+
+/* line 15, ../sass/screen.scss */
+body {
+  padding: 0 0 0 0;
+  margin: 0 0 0 0;
+  color: #55761d;
+  height: 100%;
+  overflow-x: hidden;
+  font-family: pt_sansregular;
+  font-weight: normal;
+  font-size: 16px;
+}
+
+/** Top bar/header/navigation **/
+/* line 29, ../sass/screen.scss */
+nav {
+  position: fixed;
+  z-index: 20;
+  width: 100%;
+  top: 0px;
+  left: 0%;
+  height: 67px;
+  background-image: url("../img/navShadow.png");
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  background-size: 1213px 17px;
+}
+/* line 44, ../sass/screen.scss */
+nav.active {
+  left: 70%;
+}
+/* line 49, ../sass/screen.scss */
+nav section {
+  width: 100%;
+  height: 50px;
+  text-align: center;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #6c9525), color-stop(100%, #55761d));
+  background-image: -webkit-linear-gradient(#6c9525, #55761d);
+  background-image: -moz-linear-gradient(#6c9525, #55761d);
+  background-image: -o-linear-gradient(#6c9525, #55761d);
+  background-image: linear-gradient(#6c9525, #55761d);
+  /** Begge knapper **/
+  /** Info knap **/
+  /** Menu knap **/
+}
+/* line 55, ../sass/screen.scss */
+nav section .logo {
+  position: relative;
+  padding-right: 50px;
+  padding-left: 50px;
+  height: 50px;
+  background-image: url("../img/logo.svg");
+  background-repeat: no-repeat;
+  background-position: center 5px;
+  background-size: 120px auto;
+}
+/* line 67, ../sass/screen.scss */
+nav section .logo img {
+  width: 120px;
+  height: auto;
+  margin: 5px 0 0 0;
+}
+/* line 76, ../sass/screen.scss */
+nav section .infoBtnWrapper,
+nav section .navBtnWrapper {
+  position: absolute;
+  top: 0px;
+  height: 50px;
+  width: 50px;
+}
+/* line 83, ../sass/screen.scss */
+nav section .infoBtnWrapper .btnInfo,
+nav section .infoBtnWrapper .btnNav,
+nav section .navBtnWrapper .btnInfo,
+nav section .navBtnWrapper .btnNav {
+  display: block;
+  height: 50px;
+  width: 49px;
+  background-color: #55761d;
+}
+/* line 90, ../sass/screen.scss */
+nav section .infoBtnWrapper .btnInfo:hover,
+nav section .infoBtnWrapper .btnNav:hover,
+nav section .navBtnWrapper .btnInfo:hover,
+nav section .navBtnWrapper .btnNav:hover {
+  cursor: pointer;
+}
+/* line 94, ../sass/screen.scss */
+nav section .infoBtnWrapper .btnInfo.active,
+nav section .infoBtnWrapper .btnNav.active,
+nav section .navBtnWrapper .btnInfo.active,
+nav section .navBtnWrapper .btnNav.active {
+  background-color: #ce2323;
+}
+/* line 98, ../sass/screen.scss */
+nav section .infoBtnWrapper .btnInfo.active span,
+nav section .infoBtnWrapper .btnNav.active span,
+nav section .navBtnWrapper .btnInfo.active span,
+nav section .navBtnWrapper .btnNav.active span {
+  background-position: center -59px;
+}
+/* line 106, ../sass/screen.scss */
+nav section .infoBtnWrapper .btnInfo span,
+nav section .infoBtnWrapper .btnNav span,
+nav section .navBtnWrapper .btnInfo span,
+nav section .navBtnWrapper .btnNav span {
+  display: block;
+  width: 49px;
+  height: 50px;
+  background-repeat: no-repeat;
+  background-position: center 5px;
+  background-size: auto 100px;
+}
+/* line 121, ../sass/screen.scss */
+nav section .infoBtnWrapper {
+  right: -1px;
+  border-left: 1px solid rgba(255, 255, 255, 0.2);
+}
+/* line 127, ../sass/screen.scss */
+nav section .infoBtnWrapper .btnInfo span {
+  border-left: 1px solid rgba(0, 0, 0, 0.3);
+  background-image: url("../img/iconInfo.svg");
+}
+/* line 137, ../sass/screen.scss */
+nav section .navBtnWrapper {
+  left: 0%;
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+}
+/* line 142, ../sass/screen.scss */
+nav section .navBtnWrapper.active {
+  left: 70%;
+}
+/* line 149, ../sass/screen.scss */
+nav section .navBtnWrapper .btnNav span {
+  border-right: 1px solid rgba(0, 0, 0, 0.3);
+  background-image: url("../img/iconMenu.svg");
+}
+
+/** Main Navigation **/
+/* line 161, ../sass/screen.scss */
+#menu {
+  position: fixed;
+  height: 100%;
+  width: 70%;
+  z-index: 25;
+  top: 0px;
+  left: -70%;
+  overflow: scroll;
+  -webkit-overflow-scrolling: touch;
+  background-color: #55761d;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #6c9525), color-stop(100%, #55761d));
+  background-image: -webkit-linear-gradient(#6c9525, #55761d);
+  background-image: -moz-linear-gradient(#6c9525, #55761d);
+  background-image: -o-linear-gradient(#6c9525, #55761d);
+  background-image: linear-gradient(#6c9525, #55761d);
+}
+/* line 174, ../sass/screen.scss */
+#menu.active {
+  left: 0%;
+}
+/* line 179, ../sass/screen.scss */
+#menu ul {
+  position: relative;
+}
+/* line 182, ../sass/screen.scss */
+#menu ul li {
+  border-bottom: 1px solid white;
+}
+/* line 185, ../sass/screen.scss */
+#menu ul li a {
+  display: block;
+  padding: 10px 10px 8px 10px;
+  color: white;
+  text-decoration: none;
+  /*@include background-image(linear-gradient($colorLightGreen, $colorDarkGreen));*/
+  text-shadow: rgba(0, 0, 0, 0.5) 0px -1px 0;
+}
+
+/** Info box **/
+/* line 199, ../sass/screen.scss */
+#info {
+  position: fixed;
+  z-index: 15;
+  width: 90%;
+  height: 85%;
+  top: -100%;
+  right: 0%;
+  margin-right: 0%;
+  background-color: #55761d;
+  color: white;
+  text-align: left;
+  overflow: scroll;
+  -webkit-overflow-scrolling: touch;
+  padding: 10% 5% 5% 5%;
+  -webkit-box-shadow: black 0px 0px 50px;
+  -moz-box-shadow: black 0px 0px 50px;
+  box-shadow: black 0px 0px 50px;
+  /*@include border-radius(10px);*/
+}
+/* line 217, ../sass/screen.scss */
+#info.active {
+  top: 40px;
+}
+/* line 222, ../sass/screen.scss */
+#info .bar {
+  position: fixed;
+  top: 380px;
+  left: 0px;
+  height: 20px;
+  width: 100%;
+  background-color: #55761d;
+}
+/* line 231, ../sass/screen.scss */
+#info h1 {
+  font-size: 24px;
+  margin: 0 0 0px 0;
+}
+/* line 236, ../sass/screen.scss */
+#info p {
+  margin: 15px 0 0 0;
+}
+/* line 240, ../sass/screen.scss */
+#info a {
+  display: inline-block;
+  width: 100%;
+  padding: 13px 0 10px 0;
+  margin: 30px 0 20px 0;
+  text-align: center;
+  border: 2px solid white;
+  color: #344711;
+  background-color: white;
+  text-decoration: none;
+  font-size: 18px;
+  font-family: pt_sansbold;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+}
+
+/** video items **/
+/* line 258, ../sass/screen.scss */
+.contentWrapper {
+  position: relative;
+  width: 100%;
+  padding-top: 67px;
+  left: 0%;
+  overflow-x: hidden;
+  background-image: url("../img/bg.jpg");
+  background-position: top left;
+  background-attachment: fixed;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 20px;
+  -moz-box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 20px;
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 20px;
+}
+/* line 272, ../sass/screen.scss */
+.contentWrapper.active {
+  left: 70%;
+}
+
+/* line 278, ../sass/screen.scss */
+section.items {
+  position: relative;
+  z-index: 10;
+  max-width: 1024px;
+  margin: 0 auto 0 auto;
+}
+/* line 284, ../sass/screen.scss */
+section.items.first {
+  margin-top: 80px;
+}
+/* line 288, ../sass/screen.scss */
+section.items header {
+  color: #55761d;
+  margin: 10px 0 35px 0;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 30px;
+  font-family: pt_sansbold;
+  color: black;
+  text-shadow: white 0px 1px 0;
+}
+/* line 302, ../sass/screen.scss */
+section.items header h1 {
+  display: inline-block;
+  padding: 0 15px 0 15px;
+  background-image: url("../img/bg.jpg");
+}
+/* line 308, ../sass/screen.scss */
+section.items header hr {
+  margin: -18px 0 0 0;
+  color: #55761d;
+  -webkit-box-shadow: white 0px 1px 0;
+  -moz-box-shadow: white 0px 1px 0;
+  box-shadow: white 0px 1px 0;
+}
+/* line 315, ../sass/screen.scss */
+section.items article {
+  position: relative;
+  width: 90%;
+  padding: 15px 3% 15px 3%;
+  margin: 0 2% 20px 2%;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(100%, #e2e2e2));
+  background-image: -webkit-linear-gradient(#ffffff, #e2e2e2);
+  background-image: -moz-linear-gradient(#ffffff, #e2e2e2);
+  background-image: -o-linear-gradient(#ffffff, #e2e2e2);
+  background-image: linear-gradient(#ffffff, #e2e2e2);
+  -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 8px;
+  -moz-box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 8px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 8px;
+}
+/* line 324, ../sass/screen.scss */
+section.items article .itemHeader {
+  position: relative;
+  padding: 0 0 10px 0;
+}
+/* line 328, ../sass/screen.scss */
+section.items article .itemHeader h2 {
+  color: #6c9525;
+  text-transform: uppercase;
+  font-size: 25px;
+  margin: 0 0 10px 0;
+  padding: 0 0 0 51px;
+  height: 41px;
+  background-size: 41px auto;
+  text-shadow: white 0px 1px 0;
+}
+/* line 339, ../sass/screen.scss */
+section.items article .itemHeader h2.vasktor {
+  font-size: 14px;
+  padding: 0 0 0 97px;
+  background-image: url(../img/iconer.svg), url(../img/iconer.svg);
+}
+/* line 347, ../sass/screen.scss */
+section.items article .itemHeader h2.komOvnEm {
+  font-size: 16px;
+  padding: 0 0 0 142px;
+  background-image: url(../img/iconer.svg), url(../img/iconer.svg), url(../img/iconer.svg);
+}
+/* line 358, ../sass/screen.scss */
+section.items article .itemHeader h2 p {
+  display: block;
+  color: #333333;
+  font-size: 13px;
+  text-transform: lowercase;
+  font-family: pt_sansregular;
+}
+/* line 367, ../sass/screen.scss */
+section.items article .itemHeader p {
+  color: black;
+}
+/* line 372, ../sass/screen.scss */
+section.items article video {
+  width: 98%;
+  height: auto;
+  border: 3px solid white;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 3px;
+  -moz-box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 3px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 3px;
+  display: none;
+}
+/* line 381, ../sass/screen.scss */
+section.items article a {
+  position: relative;
+  display: block;
+  height: auto;
+  border: 3px solid white;
+  overflow: hidden;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 3px;
+  -moz-box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 3px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 3px;
+}
+/* line 390, ../sass/screen.scss */
+section.items article a span {
+  display: block;
+  position: absolute;
+  top: 50%;
+  margin-top: -50px;
+  left: 50%;
+  margin-left: -50px;
+  width: 100px;
+  height: 100px;
+  background-image: url("../img/iconPlay.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 100px 100px;
+}
+/* line 407, ../sass/screen.scss */
+section.items article a img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/*************/
+/** Android **/
+/*************/
+/* line 422, ../sass/screen.scss */
+.android nav {
+  height: 92px;
+  background-size: 1213px 17px;
+}
+/* line 428, ../sass/screen.scss */
+.android nav.active {
+  left: 70%;
+}
+/* line 432, ../sass/screen.scss */
+.android nav section {
+  height: 75px;
+  /** Begge knapper **/
+  /** Info knap **/
+  /** Menu knap **/
+}
+/* line 435, ../sass/screen.scss */
+.android nav section .logo {
+  padding-right: 75px;
+  padding-left: 75px;
+  height: 75px;
+  background-image: url("../img/logo.svg");
+  background-position: center 10px;
+  background-size: 180px auto;
+}
+/* line 448, ../sass/screen.scss */
+.android nav section .infoBtnWrapper,
+.android nav section .navBtnWrapper {
+  height: 75px;
+  width: 75px;
+}
+/* line 453, ../sass/screen.scss */
+.android nav section .infoBtnWrapper .btnInfo,
+.android nav section .infoBtnWrapper .btnNav,
+.android nav section .navBtnWrapper .btnInfo,
+.android nav section .navBtnWrapper .btnNav {
+  height: 75px;
+  width: 74px;
+}
+/* line 457, ../sass/screen.scss */
+.android nav section .infoBtnWrapper .btnInfo.active,
+.android nav section .infoBtnWrapper .btnNav.active,
+.android nav section .navBtnWrapper .btnInfo.active,
+.android nav section .navBtnWrapper .btnNav.active {
+  background-color: #ce2323;
+}
+/* line 461, ../sass/screen.scss */
+.android nav section .infoBtnWrapper .btnInfo.active span,
+.android nav section .infoBtnWrapper .btnNav.active span,
+.android nav section .navBtnWrapper .btnInfo.active span,
+.android nav section .navBtnWrapper .btnNav.active span {
+  background-position: center -79px;
+}
+/* line 469, ../sass/screen.scss */
+.android nav section .infoBtnWrapper .btnInfo span,
+.android nav section .infoBtnWrapper .btnNav span,
+.android nav section .navBtnWrapper .btnInfo span,
+.android nav section .navBtnWrapper .btnNav span {
+  width: 74px;
+  height: 75px;
+  background-position: center 10px;
+  background-size: auto 140px;
+}
+/* line 485, ../sass/screen.scss */
+.android nav section .infoBtnWrapper .btnInfo span {
+  background-image: url("../img/iconInfo.svg");
+}
+/* line 494, ../sass/screen.scss */
+.android nav section .navBtnWrapper {
+  left: 0%;
+}
+/* line 497, ../sass/screen.scss */
+.android nav section .navBtnWrapper.active {
+  left: 70%;
+}
+/* line 504, ../sass/screen.scss */
+.android nav section .navBtnWrapper .btnNav span {
+  background-image: url("../img/iconMenu.svg");
+}
+
+/** Info box **/
+/* line 515, ../sass/screen.scss */
+#info {
+  width: 90%;
+  height: 85%;
+  top: -100%;
+  margin-right: 0%;
+  overflow: scroll;
+  -webkit-overflow-scrolling: touch;
+  padding: 10% 5% 5% 5%;
+}
+/* line 524, ../sass/screen.scss */
+#info.active {
+  top: 65px;
+}
+/* line 528, ../sass/screen.scss */
+#info h1 {
+  font-size: 26px;
+  margin: 0 0 0px 0;
+}
+/* line 533, ../sass/screen.scss */
+#info p {
+  font-size: 15px;
+  margin: 15px 0 0 0;
+}
+
+/** Main Navigation **/
+/* line 541, ../sass/screen.scss */
+.android #menu {
+  overflow: scroll;
+  -webkit-overflow-scrolling: touch;
+}
+/* line 549, ../sass/screen.scss */
+.android #menu ul li a {
+  font-size: 22px;
+}
+
+/** video items **/
+/* line 557, ../sass/screen.scss */
+.android .contentWrapper {
+  padding-top: 92px;
+}
+
+/* line 567, ../sass/screen.scss */
+.android section.items article .itemHeader h2 {
+  font-size: 25px;
+  margin: 0 0 10px 0;
+  padding: 0 0 0 51px;
+  height: 41px;
+  background-size: 41px auto;
+}
+/* line 576, ../sass/screen.scss */
+.android section.items article .itemHeader h2.vasktor {
+  font-size: 14px;
+  padding: 0 0 0 97px;
+  background-image: url(../img/iconer.svg), url(../img/iconer.svg);
+}
+/* line 584, ../sass/screen.scss */
+.android section.items article .itemHeader h2.komOvnEm {
+  font-size: 16px;
+  padding: 0 0 0 142px;
+  background-image: url(../img/iconer.svg), url(../img/iconer.svg), url(../img/iconer.svg);
+}
+/* line 594, ../sass/screen.scss */
+.android section.items article .itemHeader h2 p {
+  font-size: 13px;
+}
+/* line 599, ../sass/screen.scss */
+.android section.items article .itemHeader p {
+  font-size: 15px;
+}
+/* line 606, ../sass/screen.scss */
+.android section.items article a span {
+  top: 50%;
+  margin-top: -50px;
+  left: 50%;
+  margin-left: -50px;
+  width: 150px;
+  height: 150px;
+  background-image: url("../img/iconPlay.svg");
+  background-size: 150px 150px;
+}
